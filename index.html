@@ -322,21 +322,16 @@ document.querySelectorAll('.content').forEach(el => {
     document.getElementById("safe-box").addEventListener("click", function () {
       const input = prompt("Digite o código para abrir:");
       if (input === "44918") {
-        document.getElementById("safe-code").innerText = "Open!";
-document.getElementById("soundVaultOpen").play();
-cofreAberto = true;
-
-      } else {
-        document.getElementById("safe-code").innerText = "Wrong!";
-      }
-      if (input === "5015") {
-        document.getElementById("safe-code").innerText = "Open!";
-document.getElementById("soundVaultOpen").play();
-cofreAberto2 = true;
-
-      } else {
-        document.getElementById("safe-code").innerText = "Wrong!";
-      }
+  document.getElementById("safe-code").innerText = "Open!";
+  document.getElementById("soundVaultOpen").play();
+  cofreAberto = true;
+} else if (input === "5015") {
+  document.getElementById("safe-code").innerText = "Open!";
+  document.getElementById("soundVaultOpen").play();
+  cofreAberto2 = true;
+} else {
+  document.getElementById("safe-code").innerText = "Wrong!";
+}
     });
   </script>
 </body>
