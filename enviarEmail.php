@@ -1,7 +1,7 @@
 <?php
 $mensagem = $_POST["mensagem"];
 
-$para = "seuemail@gmail.com";
+$para = "hideseekc5015@gmail.com";
 $assunto = "Feedback do jogador";
 $conteudo = "Mensagem:\n\n" . $mensagem;
 
